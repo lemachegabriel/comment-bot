@@ -8,3 +8,11 @@ cred.json
 
 insta.spec
 
+geckodriver.log
+
+geckodriver.exe.exe
+
+build/insta
+
+__pycache__
+
