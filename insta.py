@@ -10,8 +10,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 class InstagramBot:
     def __init__(self, amount):
         self.amount = amount
-        self.driver = webdriver.Firefox(
-            executable_path=r"./geckodriver.exe.exe")
+        self.driver = webdriver.Chrome(
+            executable_path=r"./chromedriver.exe")
 
         sg.theme('Reddit')
         layout = [
@@ -81,7 +81,7 @@ class InstagramBot:
             self.type_like_a_person(comment_area)
             comment_area.send_keys(Keys.RETURN)
             exe+=1
-            time.sleep(random.randint(20, 45))
             print(exe)
+            time.sleep(random.randint(20, 45))          
             
 InstagramBot(1000000).start()
