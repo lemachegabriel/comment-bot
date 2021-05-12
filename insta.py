@@ -3,6 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 import random
 from PySimpleGUI import PySimpleGUI as sg
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 
 class InstagramBot:
